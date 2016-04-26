@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8D9C5DCD23E222DEE35198C21B4496FDCEF14FB1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8D9C5DCD23E222DEE35198C21B4496FDCEF14FB1" : 0,
+    "2751087B5B60FAEAA53289280B06F529748E5C15" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F859BCBC-F465-44DC-97BC-701BBDCC85A3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8D9C5DCD23E222DEE35198C21B4496FDCEF14FB1" : "mfsc51\/",
+    "2751087B5B60FAEAA53289280B06F529748E5C15" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MFSC",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MFSC\/MFSC.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/GyqGbusername\/store",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2751087B5B60FAEAA53289280B06F529748E5C15"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/GuanSir\/MFSC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D9C5DCD23E222DEE35198C21B4496FDCEF14FB1"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoreGoodsListVC">
+            <connections>
+                <outlet property="navi" destination="zFR-hZ-sX5" id="IFw-1r-BUT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFR-hZ-sX5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuS-XZ-oT8">
+                            <rect key="frame" x="8" y="30" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="pNZ-bE-5Ep"/>
+                                <constraint firstAttribute="width" constant="25" id="sPk-Rq-VUd"/>
+                            </constraints>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" image="fanhui"/>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="0xw-Sh-GuN"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店铺商品分类" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jt6-2t-Z7K">
+                            <rect key="frame" x="43" y="32" width="120" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="RDD-L2-F0m"/>
+                                <constraint firstAttribute="height" constant="21" id="hDQ-w7-MSe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smf-IO-6bi">
+                            <rect key="frame" x="335" y="30" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="TC7-UG-D6u"/>
+                                <constraint firstAttribute="width" constant="25" id="ZbJ-ci-Hmo"/>
+                            </constraints>
+                            <state key="normal" image="xuanxiang"/>
+                            <connections>
+                                <action selector="listView:" destination="-1" eventType="touchUpInside" id="HUv-wS-HWx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="VuS-XZ-oT8" firstAttribute="top" secondItem="zFR-hZ-sX5" secondAttribute="top" constant="30" id="5KV-lx-LQF"/>
+                        <constraint firstItem="Smf-IO-6bi" firstAttribute="top" secondItem="zFR-hZ-sX5" secondAttribute="top" constant="30" id="9TC-xq-zQl"/>
+                        <constraint firstItem="Jt6-2t-Z7K" firstAttribute="top" secondItem="zFR-hZ-sX5" secondAttribute="top" constant="32" id="Ri7-YV-UGD"/>
+                        <constraint firstItem="VuS-XZ-oT8" firstAttribute="leading" secondItem="zFR-hZ-sX5" secondAttribute="leading" constant="8" id="c2n-Z2-5V8"/>
+                        <constraint firstAttribute="height" constant="64" id="hNu-Az-m6g"/>
+                        <constraint firstItem="Jt6-2t-Z7K" firstAttribute="leading" secondItem="VuS-XZ-oT8" secondAttribute="trailing" constant="10" id="hwk-1b-Lkn"/>
+                        <constraint firstAttribute="trailing" secondItem="Smf-IO-6bi" secondAttribute="trailing" constant="15" id="wqq-8b-9Jy"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="uqV-hC-I2I">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zFR-hZ-sX5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M5X-yU-lGf"/>
+                <constraint firstAttribute="bottom" secondItem="uqV-hC-I2I" secondAttribute="bottom" id="Rpx-0y-lGd"/>
+                <constraint firstAttribute="trailing" secondItem="uqV-hC-I2I" secondAttribute="trailing" id="VZ6-TB-tAi"/>
+                <constraint firstItem="zFR-hZ-sX5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="a7e-fE-G3p"/>
+                <constraint firstAttribute="trailing" secondItem="zFR-hZ-sX5" secondAttribute="trailing" id="eHJ-XM-nQC"/>
+                <constraint firstItem="uqV-hC-I2I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lHi-xG-Yw1"/>
+                <constraint firstItem="uqV-hC-I2I" firstAttribute="top" secondItem="zFR-hZ-sX5" secondAttribute="bottom" id="w3O-0L-plO"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="26.5" y="291.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fanhui" width="21" height="21"/>
+        <image name="xuanxiang" width="32" height="32"/>
+    </resources>
+</document>

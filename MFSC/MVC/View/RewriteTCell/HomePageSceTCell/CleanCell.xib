@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchVC">
+            <connections>
+                <outlet property="cleanCell" destination="qSe-gB-8Eb" id="pJj-Ba-MIW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qSe-gB-8Eb">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qSe-gB-8Eb" id="26z-1R-1at">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gL-PA-txP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="清除历史记录">
+                            <color key="titleColor" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="cleanDB:" destination="-1" eventType="touchUpInside" id="bdR-A5-DNl"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6gL-PA-txP" firstAttribute="centerX" secondItem="26z-1R-1at" secondAttribute="centerX" id="1xb-ne-lTV"/>
+                    <constraint firstItem="6gL-PA-txP" firstAttribute="centerY" secondItem="26z-1R-1at" secondAttribute="centerY" id="5BJ-8l-YvN"/>
+                    <constraint firstItem="6gL-PA-txP" firstAttribute="height" secondItem="26z-1R-1at" secondAttribute="height" id="7eL-jK-1wL"/>
+                    <constraint firstItem="6gL-PA-txP" firstAttribute="width" secondItem="26z-1R-1at" secondAttribute="width" id="DN3-RS-WC7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="444.5" y="155"/>
+        </tableViewCell>
+    </objects>
+</document>

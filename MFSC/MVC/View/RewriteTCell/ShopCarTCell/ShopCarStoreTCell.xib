@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="43" id="k0B-2W-hCS" customClass="ShopCarStoreTCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k0B-2W-hCS" id="qs7-6u-NyB">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9p-Db-5Av">
+                        <rect key="frame" x="10" y="9" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="axL-5R-zD6"/>
+                            <constraint firstAttribute="width" constant="25" id="b3S-c6-phw"/>
+                        </constraints>
+                        <state key="normal" image="choosed"/>
+                        <connections>
+                            <action selector="choose:" destination="k0B-2W-hCS" eventType="touchUpInside" id="j0h-Ug-Vok"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大田牧业" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDg-O0-KwE">
+                        <rect key="frame" x="71" y="13" width="60" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="5xX-Nc-XBY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youtiaoh" translatesAutoresizingMaskIntoConstraints="NO" id="acb-QL-s5Z">
+                        <rect key="frame" x="292" y="11" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="9MN-BX-GRe"/>
+                            <constraint firstAttribute="width" constant="20" id="LMV-fN-5J5"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dianpu" translatesAutoresizingMaskIntoConstraints="NO" id="qpt-Ys-Wet">
+                        <rect key="frame" x="43" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="aLd-5o-M4n"/>
+                            <constraint firstAttribute="width" constant="20" id="cMx-0b-GUQ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qpt-Ys-Wet" firstAttribute="leading" secondItem="g9p-Db-5Av" secondAttribute="trailing" constant="8" id="3Bw-RR-pVU"/>
+                    <constraint firstItem="dDg-O0-KwE" firstAttribute="leading" secondItem="qpt-Ys-Wet" secondAttribute="trailing" constant="8" id="N0E-pv-Ncn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="acb-QL-s5Z" secondAttribute="trailing" id="Na1-tI-S7j"/>
+                    <constraint firstItem="g9p-Db-5Av" firstAttribute="leading" secondItem="qs7-6u-NyB" secondAttribute="leadingMargin" constant="2" id="OPW-2r-Qlm"/>
+                    <constraint firstItem="qpt-Ys-Wet" firstAttribute="centerY" secondItem="qs7-6u-NyB" secondAttribute="centerY" id="V8h-Ht-Mlu"/>
+                    <constraint firstItem="dDg-O0-KwE" firstAttribute="centerY" secondItem="qs7-6u-NyB" secondAttribute="centerY" id="m4S-6e-NX3"/>
+                    <constraint firstItem="acb-QL-s5Z" firstAttribute="centerY" secondItem="qs7-6u-NyB" secondAttribute="centerY" id="n2w-a6-3r7"/>
+                    <constraint firstItem="g9p-Db-5Av" firstAttribute="centerY" secondItem="qs7-6u-NyB" secondAttribute="centerY" id="rNb-kE-Zpq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="choose" destination="g9p-Db-5Av" id="3Jc-0Z-Ye7"/>
+            </connections>
+            <point key="canvasLocation" x="179" y="209.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="choosed" width="21" height="21"/>
+        <image name="dianpu" width="32" height="32"/>
+        <image name="youtiaoh" width="21" height="21"/>
+    </resources>
+</document>

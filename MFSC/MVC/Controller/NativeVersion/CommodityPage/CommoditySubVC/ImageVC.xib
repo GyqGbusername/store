@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageVC">
+            <connections>
+                <outlet property="bigLB" destination="BJN-8n-pEO" id="15k-ex-iLM"/>
+                <outlet property="showSrc" destination="ird-8t-zni" id="Snm-G6-wEm"/>
+                <outlet property="smLB" destination="X0H-y4-FUU" id="fWc-iz-xBF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ird-8t-zni">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJN-8n-pEO">
+                    <rect key="frame" x="245" y="54" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Ksd-sP-x1C"/>
+                        <constraint firstAttribute="height" constant="50" id="wOW-2k-f9q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                    <color key="textColor" red="0.49019607840000001" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/39" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0H-y4-FUU">
+                    <rect key="frame" x="295" y="64" width="60" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="bkb-CO-fPl"/>
+                        <constraint firstAttribute="height" constant="50" id="d2b-vx-nV1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.49019607840000001" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0R-Rd-bno">
+                    <rect key="frame" x="167" y="575" width="42" height="42"/>
+                    <state key="normal" image="xiazai"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="D0R-Rd-bno" secondAttribute="bottom" constant="50" id="3hg-ti-Axn"/>
+                <constraint firstAttribute="bottom" secondItem="ird-8t-zni" secondAttribute="bottom" id="Ge5-yp-b3Z"/>
+                <constraint firstAttribute="trailing" secondItem="X0H-y4-FUU" secondAttribute="trailing" constant="20" id="NuB-Sn-AeN"/>
+                <constraint firstItem="X0H-y4-FUU" firstAttribute="leading" secondItem="BJN-8n-pEO" secondAttribute="trailing" id="Yaw-La-mqq"/>
+                <constraint firstItem="X0H-y4-FUU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="aat-Mx-JTR"/>
+                <constraint firstItem="ird-8t-zni" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="b7m-jC-xtY"/>
+                <constraint firstItem="D0R-Rd-bno" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bOp-Ab-0B3"/>
+                <constraint firstItem="ird-8t-zni" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e4Z-bc-SUw"/>
+                <constraint firstAttribute="trailing" secondItem="ird-8t-zni" secondAttribute="trailing" id="l3K-qZ-ocd"/>
+                <constraint firstItem="BJN-8n-pEO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="54" id="l5B-pZ-q23"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="-62.5" y="249.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xiazai" width="42" height="42"/>
+    </resources>
+</document>

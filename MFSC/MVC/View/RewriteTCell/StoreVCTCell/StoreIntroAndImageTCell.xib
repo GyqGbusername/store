@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="271" id="ajB-Wh-A8a" customClass="StoreIntroAndImageTCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="271"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ajB-Wh-A8a" id="2oS-G6-xKe">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeImage" translatesAutoresizingMaskIntoConstraints="NO" id="KBw-oM-cRY">
+                        <rect key="frame" x="8" y="8" width="359" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="IgM-yo-PzT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爱神的箭卡号的界面寻找处女血命比纸薄从哪看见了电话及安徽大姐夫说等会付款给大伙看各....." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDu-r4-kte">
+                        <rect key="frame" x="8" y="188" width="359" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="aup-bA-vF6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1O-kq-g08">
+                        <rect key="frame" x="131" y="229" width="112" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="[查看全部]">
+                            <color key="titleColor" red="0.0" green="0.50196078431372548" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="show:" destination="ajB-Wh-A8a" eventType="touchUpInside" id="dr8-pz-Mfs"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="q1O-kq-g08" firstAttribute="top" secondItem="rDu-r4-kte" secondAttribute="bottom" constant="8" id="1qK-vI-R4z"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="KBw-oM-cRY" secondAttribute="leading" id="5kG-8n-Fkl"/>
+                    <constraint firstItem="rDu-r4-kte" firstAttribute="top" secondItem="KBw-oM-cRY" secondAttribute="bottom" id="7TS-Cs-uym"/>
+                    <constraint firstItem="q1O-kq-g08" firstAttribute="centerX" secondItem="2oS-G6-xKe" secondAttribute="centerX" id="CNE-yU-yNU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rDu-r4-kte" secondAttribute="trailing" id="Gmf-Va-P6n"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="rDu-r4-kte" secondAttribute="leading" id="O7u-O4-Kw5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="KBw-oM-cRY" secondAttribute="trailing" id="QsM-CR-ZeX"/>
+                    <constraint firstAttribute="topMargin" secondItem="KBw-oM-cRY" secondAttribute="top" id="hj9-7y-l9l"/>
+                    <constraint firstItem="q1O-kq-g08" firstAttribute="width" secondItem="2oS-G6-xKe" secondAttribute="width" multiplier="0.3" id="i0f-OE-zgz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="140.5" y="188.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeImage" width="170" height="170"/>
+    </resources>
+</document>

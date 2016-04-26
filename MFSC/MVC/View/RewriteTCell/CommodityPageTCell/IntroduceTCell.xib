@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="i1Q-BD-FID" customClass="IntroduceTCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i1Q-BD-FID" id="u9J-zq-Jx7">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="【数据】库等哈看时间段哈时间刻度民政部厂家爱看的哦脾气就算减肥不开始打两份黑龙江阿双方就" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEQ-ze-mZI">
+                        <rect key="frame" x="15" y="8" width="340" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="xoM-PM-iwq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💰 4088.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5h-WC-iPb">
+                        <rect key="frame" x="20" y="77" width="116" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="lTB-SC-2zk"/>
+                            <constraint firstAttribute="width" constant="116" id="ocW-mU-zD3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <color key="textColor" red="0.0" green="0.50196078431372548" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016苹果新款4寸屏幕手机预售开启4月20日以后陆续发货" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tk-u9-Ngg">
+                        <rect key="frame" x="20" y="55" width="335" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="kg4-rH-1yg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.50196078431372548" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="0tk-u9-Ngg" secondAttribute="trailing" constant="12" id="50j-gV-dLJ"/>
+                    <constraint firstItem="H5h-WC-iPb" firstAttribute="leading" secondItem="u9J-zq-Jx7" secondAttribute="leadingMargin" constant="12" id="81I-uv-Tyk"/>
+                    <constraint firstItem="H5h-WC-iPb" firstAttribute="top" secondItem="0tk-u9-Ngg" secondAttribute="bottom" constant="8" id="87Y-np-MQZ"/>
+                    <constraint firstItem="0tk-u9-Ngg" firstAttribute="top" secondItem="CEQ-ze-mZI" secondAttribute="bottom" constant="-3" id="Akt-Vs-V9E"/>
+                    <constraint firstAttribute="topMargin" secondItem="CEQ-ze-mZI" secondAttribute="top" id="SVI-1f-J4H"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="CEQ-ze-mZI" secondAttribute="trailing" constant="12" id="WGU-bz-z0U"/>
+                    <constraint firstItem="CEQ-ze-mZI" firstAttribute="leading" secondItem="u9J-zq-Jx7" secondAttribute="leadingMargin" constant="7" id="n0z-WA-h3m"/>
+                    <constraint firstItem="0tk-u9-Ngg" firstAttribute="leading" secondItem="u9J-zq-Jx7" secondAttribute="leadingMargin" constant="12" id="sBs-3B-6eg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="price" destination="H5h-WC-iPb" id="p5C-dC-v0P"/>
+            </connections>
+            <point key="canvasLocation" x="332.5" y="216"/>
+        </tableViewCell>
+    </objects>
+</document>
